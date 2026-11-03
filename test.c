@@ -13,7 +13,7 @@ void readWater(int water[])
 void printWater(const int water[])
 {
     for (int i = 0; i < DAYS; i++)
-        printf("Day %d: %d glasses\n", i + 1, water[i]);
+        printf("Day %d: %d glasses\n", i + 1, *(water + i));
 }
 
 float calculateWater(const int water[], int *total, int *maximum)
